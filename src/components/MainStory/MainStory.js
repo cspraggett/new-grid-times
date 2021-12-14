@@ -51,8 +51,12 @@ const Abstract = styled.p`
     overflow: hidden;
     margin-bottom: 2em;
 
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndUp} {
     -webkit-line-clamp: 16;
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    -webkit-line-clamp: 10;
   }
 `;
 
